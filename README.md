@@ -1,28 +1,27 @@
-# ExpediaTaskFrontEnd
+*environment requirements :
+- JDK 1.8 or above; download link >>> http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
+- Tomcat 8 server or any java EE server; download link >>> https://tomcat.apache.org/download-80.cgi
 
-## Development server
+- Node js and npm : 
+    - download Node js and npm using this URL 'https://nodejs.org/en/download/'
+    - open the terminal and run the following command "npm install -g @angular/cli"
+    
+- Apache maven 3; download link >>> https://maven.apache.org/download.cgi
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Git version control system; download link >>> https://git-scm.com/downloads
+______________________________________________________________________________________
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+*please follow these instructions when setting up the environment : 
+ 
+ 1) Clone the back-end project with the following command >> git clone https://github.com/dina-alameen/expedia-task-backend.git
+ 2) Navigate to the project directory and run the following command >> mvn clean install
+ 3) Extract the war file from the target folder and place it in your tomcat webapps folder 
+ 
+ 4) Clone the front-end project with the following command >> git clone https://github.com/dina-alameen/expedia-task-frontend.git
+ 5) Navigate to the front end project and run the following command >> npm install
+ 6) From the same directory open the command line and Run the following command >> ng build --prod --base-href="."
+ 7) Navigate inside the generated dist folder, copy its content and paste them to the back end folder in tomcat webapps.
+ 
+ 8) Start tomcat.
+ 9) Open browser window and hit the project URL
