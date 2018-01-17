@@ -92,7 +92,7 @@ export class SearchFormComponent implements OnInit {
   }
 
   composeURL(): string {
-    var url = 'http://localhost:8080/task/resources/hotels-offers?';
+    var url = this.environmentConfig.environmentURL + '/hotels-offers?';
     url += "destinationName=" + this.destinationName;
     if (this.lengthOfStay) {
       url += "&lengthOfStay=" + this.lengthOfStay;
