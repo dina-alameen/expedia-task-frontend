@@ -1,0 +1,7 @@
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+
+.ui-widget-header .ui-button, .ui-widget-content .ui-button, .ui-widget.ui-button, .ui-button{
+    background: #e0a800 !important;
+}

@@ -1,0 +1,13 @@
+.search-result-hotel-name{
+    color: #c89a0f;
+}
+
+.search-result-hotel-card{
+    height: 300px;
+    border: 1px solid #936f03;
+}
+
+.search-result-hotel-card:hover{
+    box-shadow: 0px 0px 3px 2px #936f03;
+    cursor: pointer;    
+}
