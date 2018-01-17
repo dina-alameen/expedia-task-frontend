@@ -34,7 +34,7 @@ export class SearchFormComponent implements OnInit {
 
 
   ngOnInit() {
-    this.environmentConfig = this.loadJSON('/assets/config.json');
+    this.environmentConfig = this.loadJSON('./assets/config.json');
     console.log(this.environmentConfig);
     if (!this.environmentConfig || !this.environmentConfig.environmentURL) {
       this.messageService.add({ severity: 'error', summary: 'Validaion Error', detail: 'Error Reading config.json file, please configure the environmentURL property' });
